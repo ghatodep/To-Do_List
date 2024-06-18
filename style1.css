@@ -1,0 +1,157 @@
+/* 
+App Name  : To Do List App
+Developer : Pushpak Ghatode
+Date      : 06 June 2024 
+*/
+
+:root{
+    --bg-color-body : lightgrey;
+    --bg-color-1: white;
+    --bg-color-2: whitesmoke;
+    --color-1: black;
+    --color-2: grey;
+    --color-3: darkblue;
+    --inner-width: 90%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    background-color: var(--bg-color-body);
+}
+
+main{
+    background-color: var(--bg-color-1);
+    padding: 1rem;
+    border-radius: 7px;
+    width: 50vw;
+    margin: 20vh auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 20px 1px var(--color-1);
+}
+
+/* common styling */
+hr{
+    color: var(--bg-color-body);
+    font-weight: bold;
+    width: var(--inner-width);
+}
+
+.transparent-button{
+    border: none;
+    background-color: var(--bg-color-1);
+    outline: none;
+    color: var(--color-2);
+    font-size: 0.7rem;
+}
+
+.transparent-button:hover{
+    /* color: var(--color-3); */
+    background-color: aquamarine;
+    border-radius: 5px;
+    transform: translateY(-10%);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.row-flx-sp-bet{
+    width: var(--inner-width);
+    display: flex;
+    justify-content: space-between;
+}
+
+/* header styling */
+#header{
+    padding: 0.25rem;
+    margin: auto;
+    background-color: var(--bg-color-body);
+    border-radius: 7px;
+    height: 2rem;
+    align-items: center;
+}
+
+#header i{
+    font-size: 1.5rem; 
+    margin-left: 0.25rem;   
+}
+
+#add-task{
+    border: none;
+    font-size: 1rem;
+    background-color: var(--bg-color-body);
+    margin-right: 0.25rem;
+    outline: none;
+}
+
+#new-task-name{
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    width: 85%;
+    padding: 0.25rem;
+    color: var(--color-2);
+    background-color: var(--bg-color-body);
+}
+
+#flw-header{
+margin-top: 0.5rem;
+}
+
+/* to do list item tiles styling */
+#list-container{
+    width: var(--inner-width);
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#list-container h1{
+    font-style: italic;
+    font-family: cursive;
+    text-shadow: 2px 2px var(--bg-color-body);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#list-container div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.15rem 0;
+}
+
+#list-container div button{
+    border: none;
+    background-color: var(--bg-color-1);
+    outline: none;
+    color: var(--color-1);
+    font-size: 1rem;
+    visibility: hidden;
+}
+
+#list-container div:hover button{
+    visibility: visible;
+    cursor: pointer;
+}
+
+#list-container div span input{
+    outline: none;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+/* footer styling */
+#total{
+    color: var(--color-2);
+    font-size: 0.7rem;
+}
+
+#total span{
+    color: var(--color-1);
+    font-size: 0.9rem;
+    font-weight: 800;
+}

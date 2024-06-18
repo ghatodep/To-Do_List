@@ -1,0 +1,79 @@
+<!-- 
+App Name  : To Do List App
+Developer : Pushpak Ghatode
+Date      : 06 June 2024
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link href="style1.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/b3348ae33f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/x-icon" href="static\to-do.ico" />
+  </head>
+  <body>
+    <main>
+      <!-- header section of to do list -->
+      <section id="header" class="row-flx-sp-bet">
+        <i class="fa-sharp fa-solid fa-list-ol"></i>
+        <input
+          type="text"
+          id="new-task-name"
+          name="new-task-name"
+          placeholder="Type your todo list"
+          autocomplete="off"
+        />
+        <button id="add-task">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </section>
+
+      <section id="flw-header" class="row-flx-sp-bet">
+        <button id="complete-all" class="transparent-button">
+          <i class="fa-solid fa-check-double"></i> Complete All Tasks
+        </button>
+        <button id="clear-completed" class="transparent-button">
+          Clear Completed
+        </button>
+      </section>
+
+      <hr id="hr-line-1" />
+      <section id="list-container">
+        <!-- List Items will be added using JS dynamically -->
+        <h1></h1>
+        <!-- <div>
+          <span>
+            <input type="radio" />
+            <span>Dummy Sample Task</span>
+          </span>
+          <button>
+            <i class="fa-sharp fa-solid fa-circle-xmark"></i>
+          </button>
+        </div> -->
+      </section>
+      <hr id="hr-line-2" />
+
+      <!-- footer section of to do list -->
+      <section id="footer" class="row-flx-sp-bet">
+        <span id="total">
+          <span>0</span>
+          Tasks Left
+        </span>
+        <span id="buttons">
+          <button id="sort-all" class="transparent-button">All</button>
+          <button id="sort-uncomp" class="transparent-button">
+            Uncompleted
+          </button>
+          <button id="sort-comp" class="transparent-button">Completed</button>
+        </span>
+      </section>
+    </main>
+    <script src="script1.js"></script>
+  </body>
+</html>
