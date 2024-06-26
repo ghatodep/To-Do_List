@@ -1,7 +1,7 @@
 # To-Do_List
 To maintain your daily task use this simple todo list.
 
-This is a basic Web Application made using HTML CSS and Vanilla JavaScript. To use this download the repo and simply open 'todolist_index.html' file in your browser. 
+This is a basic Web Application made using HTML CSS and Vanilla JavaScript. To use this download the repo and simply open 'todolist_index.html' file in your browser. or visit on 'https://ghatodep.github.io/To-Do_List/todolist_index.html'.
 
 features:
  	1. You can simply add tasks using text box and add(+) button besides it.
@@ -11,3 +11,4 @@ features:
 	5. to mark all tasks as complete use 'Complete All' button.
 	6. to clear all tasks that are marked as complete use 'Clear All' button.
 
+Watch a small video about this project on youtube - https://www.youtube.com/watch?v=Nhr8-GIt920&t=14s
